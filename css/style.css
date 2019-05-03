@@ -1,18 +1,1 @@
 
-/* Site Styles Go Here */
-
-.card-body {
-    padding: 1.5rem;
-
-}
-
-.inner {
-    overflow: hidden;
-}
-.inner img {
-    transition: all 0.5s ease;
-}
-
-.inner:hover img {
-    transform: scale(1.5);
-}

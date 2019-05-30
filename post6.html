@@ -126,10 +126,11 @@
                     </a>
                     <span class="caption text-muted">Blog homepage detailed summary</span>
 
-                    <p>According to WAVE audit, there nine errors on the homepage alone. Most errors are empty links in
-                        the footer and the drop-down menu. I also noticed contrast errors but were good enough to pass
-                        the test. Looking at the code below it easy to fix these errors. I can just go back to my code
-                        editor and remove those extra lines of code or the actual pages.
+                    <p>According to WAVE audit, there were nine errors on the homepage alone. Most errors were empty links in
+                        the footer and the drop-down menu. I noticed low-contrast errors as well, but were good enough to pass
+                        the test. Looking at the code below, these are easy errors to fix. First approach would be going back
+                        to my code editor and removing those extra lines of code. Another approach would be adding links to make
+                        them work.
                     </p>
 
                     <a href="#">
@@ -137,10 +138,9 @@
                     </a>
                     <span class="caption text-muted">Code empty links drop-down</span>
 
-                    <p>Google's lighthouse audit the low-contrast text and this might make it hard a user to
-                        read. The empty links errors are shown as well but it seems to just be in the footer section.
-                        I also did a manual check with tabing, keyboard, and HTML5 landmark elements. As you can tell
-                        in the results below the website does well with a high score.
+                    <p>Google's lighthouse audit shows a low-contrast errors, and this might make it hard for users to
+                        read but according to WAVE it meets the conformance level AA and AAA. I also did a 
+                        manual check with tabing and keyboard they both responded well. 
                     </p>
 
                     <a href="#">
@@ -148,9 +148,34 @@
                     </a>
                     <span class="caption text-muted">Google lighthouse detailed summary</span>
 
+                    <p>After removing the empty links on the drop-down menu,and adding the correct attributes (aria-label) which hides the text 
+                        from displaying on the screen, it was good enough to address the empty-link issues. As for low-contrast errors,
+                        I did not see any need of going back and making any changes since it passed with conformance level AA and AAA.
+                    </p>
 
-                    <p>
+                    <a href="#">
+                        <img class="img-fluid" src="img/fixedlinks.png" alt="Empyty-links drop-down menu error Fix">
+                    </a>
+                    <span class="caption text-muted">Empyty-links drop-down menu fixed</span>
 
+                    <a href="#">
+                        <img class="img-fluid" src="img/footer-errors.png" alt="Empyty-links footer error Fix">
+                    </a>
+                    <span class="caption text-muted">Empyty-links errors footer fixed</span>
+
+
+
+
+                    <a href="#">
+                        <img class="img-fluid" src="img/low-contrast.png" alt="Low Errors">
+                    </a>
+                    <span class="caption text-muted">Google lighthouse after fixing errors</span>
+
+                    <p>Nevertheless, I went back and tried to fix these low-contrast issues and retested the page again. This time lighthouse
+                        shows zero errors. To summarize my findings, this Bootstrap template does a great job at saving you time when it comes to
+                        to dealing accessibility issues. I also learnt so much about different HTML tags that can be used to improve accessibility,
+                        and one thing that left me sort confused was the low-contrast issues, I did not go back to fix them since they were passing 
+                        test. 
                     </p>
 
                 </div>

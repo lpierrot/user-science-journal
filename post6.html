@@ -100,82 +100,81 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <p>For this week's accessibility report, I tested this blog to see if it adheres <a
                             href="https://www.w3.org/WAI/fundamentals/accessibility-principles/" target="_blank"> W3C
-                            principles</a> and <a href="https://www.section508.gov/manage/laws-and-policies"
-                            target="_blank">Section 508
-                            guidelines</a>. During this test, I used muliple tools to check for errors
-                        and alternative ways of fixing them.
+                            principles</a> and <a href="https://webaim.org/techniques/keyboard/" target="_blank">WebAim
+                            guidelines</a>. As part of a class project and familiarizing myself with accessibility best
+                        practices, I will document any errors and attempt to fix them.
                     </p>
-                    <p>As part of a class project and familiarizing myself with accessibility best
-                        practices, I will document any errors and fix them as I continue to add more content. This
-                        blog is not targeting any particular demography, rather, anyone who enjoys the web and
-                        interested in learning more about accessibility.
+                    <p>
                     </p>
 
-                    <p>For testing purposes, I used. <a href="https://developers.google.com/web/tools/lighthouse/"
-                            target="_blank">Google's
-                            lightweight</a>, VoiceOver by Apple, <a href="hhttp://wave.webaim.org/"
-                            target="_blank">WAVE</a> and <a
-                            href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-levels-head"
-                            target="_blank">WCAG 2.0</a> standards for conformance evaluation. I also used the
+                    <p>For testing purposes, I used different tools including <a
+                            href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Google's
+                            Lightweight</a>, VoiceOver by Apple, <a href="hhttp://wave.webaim.org/"
+                            target="_blank">WAVE</a>, and
                         <a href="https://webaim.org/standards/wcag/checklist" target="_blank">Webaim
-                            checklist</a> to help me refer back to W3C principles.
+                            checklist</a> for conformance evaluation. .
                     </p>
+
+                    <p>For my first audit, I used to wave to scan for errors on all pages, and as you can see in the
+                        screenshot below, they were plenty of empty links in navigation section and in the footer
+                        section in the social media. Other significant errors, were low-contrast text, which surprisingly 
+                        scored high with lighthouse.
+                    </p>
+
+                    <h2 class="section-heading">WAVE</h2>
 
                     <a href="#">
                         <img class="img-fluid" src="img/user-scincehp.png" alt="Blog Accessibility testing">
                     </a>
-                    <span class="caption text-muted">Blog homepage detailed summary</span>
+                    <span class="caption text-muted">Wave audit summary</span>
 
-                    <p>According to WAVE audit, there were nine errors on the homepage alone. Most errors were empty links in
-                        the footer and the drop-down menu. I noticed low-contrast errors as well, but were good enough to pass
-                        the test. Looking at the code below, these are easy errors to fix. First approach would be going back
-                        to my code editor and removing those extra lines of code. Another approach would be adding links to make
-                        them work.
-                    </p>
-
-                    <a href="#">
-                        <img class="img-fluid" src="img/empyty-links.png" alt="empyty-links description">
-                    </a>
-                    <span class="caption text-muted">Code empty links drop-down</span>
-
-                    <p>Google's lighthouse audit shows a low-contrast errors, and this might make it hard for users to
-                        read but according to WAVE it meets the conformance level AA and AAA. I also did a 
-                        manual check with tabing and keyboard they both responded well. 
-                    </p>
+                    <h2 class="section-heading">Google Lighthouse</h2>
 
                     <a href="#">
                         <img class="img-fluid" src="img/user-sciencelighthouse.png" alt="Blog Accessibility testing">
                     </a>
-                    <span class="caption text-muted">Google lighthouse detailed summary</span>
+                    <span class="caption text-muted">Google lighthouse audit before</span>
 
-                    <p>After removing the empty links on the drop-down menu,and adding the correct attributes (aria-label) which hides the text 
-                        from displaying on the screen, it was good enough to address the empty-link issues. As for low-contrast errors,
-                        I did not see any need of going back and making any changes since it passed with conformance level AA and AAA.
+                    <p>Fixing empty links errors on the drop-down was reasonably straightforward. I went back to VS code
+                        and removed all the links that did not point to any page.</p>
+
+                    <a href="#">
+                        <img class="img-fluid" src="img/empyty-links.png" alt="empyty-links description">
+                    </a>
+                    <span class="caption text-muted">Drop-down menu code before</span>
+
+                    <p>I had added these links for my previous projects, but as you can see I should have probably
+                        removed them. This is what the code looks like after making these changes. 
                     </p>
 
                     <a href="#">
                         <img class="img-fluid" src="img/fixedlinks.png" alt="Empyty-links drop-down menu error Fix">
                     </a>
-                    <span class="caption text-muted">Empyty-links drop-down menu fixed</span>
+                    <span class="caption text-muted">Empty-links drop-down menu fixed</span>
+
+                    <p>As for empty links in the footer section, it was a little tricky to fix them.I initially thought 
+                        that it was due to social media links being empty, but when I added direct links to point
+                        to my Linkedin and Github accounts, for some reason, the same errors were still showing up in Wave.
+                    </p>
+                    
+                    <p> To fix this issue I used aria-label to each icon's anchor tags as suggested on this <a
+                            href="https://www.drupal.org/project/social_media_links/issues/2727763"
+                            target="_blank"> Drupal
+                            forum</a> and that took away the errors.
+                    </p>
 
                     <a href="#">
                         <img class="img-fluid" src="img/footer-errors.png" alt="Empyty-links footer error Fix">
                     </a>
                     <span class="caption text-muted">Empyty-links errors footer fixed</span>
 
-
-
-
+                    <p>I tested again using Google Lighthouse and the results were 100%. </p>
                     <a href="#">
                         <img class="img-fluid" src="img/low-contrast.png" alt="Low Errors">
                     </a>
                     <span class="caption text-muted">Google lighthouse after fixing errors</span>
 
-                    <p>Nevertheless, I went back and tried to fix these low-contrast issues and retested the page again. This time lighthouse
-                        shows zero errors. To summarize my findings, this Bootstrap template does a great job at saving you time when it comes to
-                        to dealing accessibility issues. I also learnt so much about different HTML tags that can be used to improve accessibility,
-                        and one thing that left me sort confused was the low-contrast issues, I did not go back to fix them since they were passing 
-                        test. 
+                    <p>
                     </p>
 
                 </div>
@@ -193,7 +192,7 @@
                     <ul class="list-inline text-center">
                         <li class="list-inline-item">
                             <a href="https://www.linkedin.com/in/lionel-pierrot-908748180/" target="_blank"
-                                aria-label="Link to Linkedin page">
+                                aria-label="Find me on Linkedin">
                                 <span class="fa-stack fa-lg">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -202,7 +201,7 @@
                         </li>
                         <li class="list-inline-item">
                             <a href="https://github.com/lpierrot?tab=repositories" target="_blank"
-                                aria-label="Link to Github Page">
+                                aria-label="Find me on Github">
                                 <span class="fa-stack fa-lg">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>

@@ -82,7 +82,7 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
                         <h1>My Blog</h1>
-                        <h2 class="subheading">Accessibility
+                        <h2 class="subheading">Accessibility Analysis
                         </h2>
                         <span class="meta">Posted by
                             <a href="#">Lionel Pierrot</a>
@@ -104,8 +104,6 @@
                             guidelines</a>. As part of a class project and familiarizing myself with accessibility best
                         practices, I will document any errors and attempt to fix them.
                     </p>
-                    <p>
-                    </p>
 
                     <p>For testing purposes, I used different tools including <a
                             href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Google's
@@ -116,9 +114,9 @@
                     </p>
 
                     <p>For my first audit, I used to wave to scan for errors on all pages, and as you can see in the
-                        screenshot below, they were plenty of empty links in navigation section and in the footer
-                        section in the social media. Other significant errors, were low-contrast text, which surprisingly 
-                        scored high with lighthouse.
+                        screenshot below, they were plenty of empty links in the navigation and the footer sections of
+                        the page. Other significant errors, were low-contrast text, which surprisingly scored high with
+                        Lighthouse.
                     </p>
 
                     <h2 class="section-heading">WAVE</h2>
@@ -143,8 +141,8 @@
                     </a>
                     <span class="caption text-muted">Drop-down menu code before</span>
 
-                    <p>I had added these links for my previous projects, but as you can see I should have probably
-                        removed them. This is what the code looks like after making these changes. 
+                    <p>I had added these links for my previous projects, but as you can see, I should have probably
+                        removed them. The image below shows what the page looks like now, neat and organized code.
                     </p>
 
                     <a href="#">
@@ -152,14 +150,16 @@
                     </a>
                     <span class="caption text-muted">Empty-links drop-down menu fixed</span>
 
-                    <p>As for empty links in the footer section, it was a little tricky to fix them.I initially thought 
-                        that it was due to social media links being empty, but when I added direct links to point
-                        to my Linkedin and Github accounts, for some reason, the same errors were still showing up in Wave.
+                    <p>As for the empty links at the social media icons, it was a little tricky to fix them. I
+                        initially thought that it was due to social media links being empty, however, when I added links
+                        to point to my Linkedin and Github accounts, for some reason the same errors were still showing
+                        up in Wave.
+
                     </p>
-                    
+
                     <p> To fix this issue I used aria-label for each icon's anchor tags as suggested on this <a
-                            href="https://www.drupal.org/project/social_media_links/issues/2727763"
-                            target="_blank"> Drupal
+                            href="https://www.drupal.org/project/social_media_links/issues/2727763" target="_blank">
+                            Drupal
                             forum</a> and that took away the errors.
                     </p>
 
@@ -177,7 +177,12 @@
                     </a>
                     <span class="caption text-muted">No errors</span>
 
-                    <p>
+                    <p>I found Bootstrap very helpful when it comes to accessibility. I can't imagine how much time it
+                        would take to develop from scratch and having to worry about meeting accessibility standards; it
+                        would take a significant amount of time. One other cool thing I learned fixing low-contrast
+                        errors was the use of (!important) to override existing property values. It was particularly
+                        helpful since I have a bunch of links added to my index.html page. My overall take this week is
+                        that as a developer, accessibility should always be a priority for best practices.
                     </p>
 
                 </div>

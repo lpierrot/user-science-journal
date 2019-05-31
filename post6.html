@@ -157,7 +157,7 @@
                         to my Linkedin and Github accounts, for some reason, the same errors were still showing up in Wave.
                     </p>
                     
-                    <p> To fix this issue I used aria-label to each icon's anchor tags as suggested on this <a
+                    <p> To fix this issue I used aria-label for each icon's anchor tags as suggested on this <a
                             href="https://www.drupal.org/project/social_media_links/issues/2727763"
                             target="_blank"> Drupal
                             forum</a> and that took away the errors.
@@ -168,11 +168,14 @@
                     </a>
                     <span class="caption text-muted">Empyty-links errors footer fixed</span>
 
-                    <p>I tested again using Google Lighthouse and the results were 100%. </p>
+                    <p>For low-contrast errors, I created a styles.css file in the CSS directory and targeted the
+                        classes that were creating these errors. After making these changes, I tested again using both
+                        Wave and Lighthouse did not detect any errors.
+                    </p>
                     <a href="#">
-                        <img class="img-fluid" src="img/low-contrast.png" alt="Low Errors">
+                        <img class="img-fluid" src="img/debugaudit.png" alt="Low Errors">
                     </a>
-                    <span class="caption text-muted">Google lighthouse after fixing errors</span>
+                    <span class="caption text-muted">No errors</span>
 
                     <p>
                     </p>

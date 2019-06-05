@@ -75,7 +75,7 @@
           <!-- <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li> -->
-          
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
@@ -122,9 +122,13 @@
     <div class="row">
       <div class="col-sm-4 col-md-8">
         <div class="card" style="width: 10rem;">
-        <div class="list-group list-group-flush">
-            <a href="references.html" class="list-group-item list-group-item-action bg-light">References</a>
-        </div>
+          <div class="list-group list-group-flush">
+            <a href="references.html" class="list-group-item list-group-item-action bg-light" onclick="gtag('event', 'View', {
+                                        'event_category':'Photo',
+                                        'event_label':'Access',
+                                        'value':2
+                                    })">References</a>
+          </div>
         </div>
       </div>
     </div>
@@ -136,10 +140,11 @@
     <div class=container>
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="d-flex justify-content-center">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4SuiCdIOslY?start=46" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4SuiCdIOslY?start=46" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            title="60 seconds to understand UX"> Understanding UX</iframe>
+        </div>
       </div>
-    </div>
     </div>
   </section>
 
@@ -150,7 +155,8 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <ul class="list-inline text-center">
             <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/lionel-pierrot-908748180/" target="_blank" aria-label="Link to Linkedin page">
+              <a href="https://www.linkedin.com/in/lionel-pierrot-908748180/" target="_blank"
+                aria-label="Link to Linkedin page">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>

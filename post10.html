@@ -22,7 +22,7 @@
     <meta name="description" content="Post 10">
     <meta name="author" content="Lionel Pierrot">
 
-    <title>User Science Journal</title>
+    <title>Goal Experiment Summary Report</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
@@ -86,12 +86,12 @@
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
-                        <h1>Blogging About Design</h1>
+                        <h1>Final Report</h1>
                         <h2 class="subheading">Excited to share my thoughts and findings
                         </h2>
                         <span class="meta">Posted by
                             <a href="#">Lionel Pierrot</a>
-                            on April 3, 2019</span>
+                            on June 12, 2019</span>
                     </div>
                 </div>
             </div>
@@ -103,87 +103,103 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
-                    <p>For my first blog post I am going to be writing about User .</p>
+                    <p>Now that the quarter has come to an end, in my final post for I will discuss my experience
+                        setting up goals, content experiment with AB test, and finally analyze all the data. To recap,
+                        for the past few weeks, I set up goals in Google Analytics to see how users were completing
+                        these goals to count as a conversion in Google Analytics, and what steps they took to get from
+                        point A to point B.</p>
 
-                    <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no
-                        turning
-                        back from science. The early warnings about technological dangers also come from science.</p>
+                    <p>A big part of being a web developer is to understand your audience wants and be able to respond
+                        to their needs. Tools like Google Analytics and Optimize make this process easy and fast. It is
+                        during this testing phase that we analyze the data we collect and implement changes. Using
+                        Optimize, I set up a variant page with a blue start here button, and whole different homepage.
+                        My goal was to have users to go from the index page, click on the references link or the start
+                        button here which then takes them to the references page for GA to register a conversion goal
+                        and event. </p>
 
-                    <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that
-                        they set
-                        eye on the earth.</p>
+                    <p>As a result, I did get extensive feedback. First, let me talk about how I shared my blog? I
+                        started sending out the link to a couple of friends, classmates, and family members. I did not
+                        particularly mention anything to them, or what steps to take, I just wanted honest feedback.
+                        Most responses were mainly positive, with users saying that they liked the variant page, and
+                        others suggested a few changes to implement. </p>
 
-                    <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become
-                        her
-                        protectors rather than her violators. That's how I felt seeing the Earth for the first time. I
-                        could not
-                        help but love and cherish her.</p>
+                    <h2 class="section-heading">Overview</h2>
 
-                    <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who
-                        will,
-                        the experience most certainly changes your perspective. The things that we share in our world
-                        are far more
-                        valuable than those which divide us.</p>
-
-                    <h2 class="section-heading">The Final Frontier</h2>
-
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally,
-                        it is a
-                        task to occupy the generations. And no matter how much progress one makes, there is always the
-                        thrill of
-                        just beginning.</p>
-
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally,
-                        it is a
-                        task to occupy the generations. And no matter how much progress one makes, there is always the
-                        thrill of
-                        just beginning.</p>
-
-                    <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of
-                        tomorrow.
-                        Science has not yet mastered prophecy. We predict too much for the next year and yet far too
-                        little for the
-                        next ten.</blockquote>
-
-                    <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is
-                        a
-                        historical process which mankind is carrying out in accordance with the natural laws of human
-                        development.</p>
-
-                    <h2 class="section-heading">Reaching for the Stars</h2>
-
-                    <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the
-                        size of a
-                        marble, the most beautiful you can imagine. That beautiful, warm, living object looked so
-                        fragile, so
-                        delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has
-                        to change a
-                        man.</p>
+                    <p>My initial set up was straight forward. I set up Google Analytics, added the tracking code to my
+                        head, and Google started tracking each visit. The data was misleading since it counted any visit
+                        to my website, including new and returning users. I realized that Google Analytics was also
+                        counting a user as new when they were off session for about half an hour. Below is an overview
+                        of all the results.</p>
 
                     <a href="#">
-                        <img class="img-fluid" src="img/price.png" alt="google prices">
+                        <img class="img-fluid" src="img/overview.png" alt="google Analytics final overview">
                     </a>
-                    <span class="caption text-muted">To go places and do things that have never been done before –
-                        that’s what
-                        living is all about.</span>
+                    <span class="caption text-muted">Overall results for the last quarter</span>
 
-                    <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year
-                        mission: to
-                        explore strange new worlds, to seek out new life and new civilizations, to boldly go where no
-                        man has gone
-                        before.</p>
+                    <p>As you can tell, this is broad data. According to Google Analytics, a new user is counted each
+                        time a device or browser loads your content for the first time. Returning users are those who
+                        have visited the site before and are returning to your websites. This part can get tricky
+                        though; If a user visits your site, deletes their browser cookies, and returns to your site,
+                        they are counted as a New User. The same will happen if a user switches devices or browsers on a
+                        return visit to your website. </p>
+
+                <h2 class="section-heading">Goals and funnel</h2>
+
+                    <p>To narrow things down to more accurate data, I set up a goal and funnel to see how these users
+                        were completing the goals and where they were dropping off. This step is particularly crucial if
+                        you are running promoting a particular product or service. As mentioned, my goal was to have as
+                        many visitors go to my references page. To better understand the data, I set up a goal to run
+                        for a specific time. Here is how this process was set up. </p>
 
                     <a href="#">
-                        <img class="img-fluid" src="img/book.png" alt="google prices at booking">
+                        <img class="img-fluid" src="img/goal-custom-template.png" alt="Goals in Google initial set up">
                     </a>
+                    <span class="caption text-muted">The goal set up</span>
 
-                    <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a
-                        fundamental truth
-                        to our nature, Man must explore, and this is exploration at its greatest.</p>
+                    <p>Looking at the goal results below, you can see a spike in users who completed the goals. </p>
 
-                    <p>Placeholder text by
-                        <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
-                        <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+                    <a href="#">
+                        <img class="img-fluid" src="img/Goals-results.png" alt="google analytics results">
+                    </a>
+                    <span class="caption text-muted">Goal results</span>
+                    
+                    <p>Now for the funnel, the image shows the path users took to complete a goal. There were two ways
+                        to achieve the goals. One the user could go from the index page to the references page.
+                        Secondly, they could also go from post 8 to the index page then references page. The goals were
+                        completed with some users dropping off to different pages. </p>
+
+                    <a href="#">
+                        <img class="img-fluid" src="img/funnel.png" alt="funnel results">
+                    </a>
+                    <span class="caption text-muted">Funnel results in GA</span>
+
+                    <p>The goals were completed with some users dropping off to different pages. Keep in mind that this
+                        data also includes what I collected after doing my content experiment in Optimize. </p>
+
+                    <h2 class="section-heading">Content Experiment Test</h2>
+
+                    <p>After getting feedback from multiple users, I decided to do a content experiment using the AB
+                        testing tool in Optimize. Users had responded saying that they wanted to see a different
+                        homepage without the YouTube video. In my last week's post, I had also mentioned that I had so
+                        many visitors land on the homepage, but a few clicked on the references link. I think this was
+                        due to the color. It matched also matched the background. Looking at the data in optimize on the
+                        image below. </p>
+
+                    <a href="#">
+                        <img class="img-fluid" src="img/contentfinalresults.png" alt="Content experiment">
+                    </a>
+                    <span class="caption text-muted">The results after testing</span>
+
+                    <p>Now that I look at the results, the objective that I had set up did not get any data. Also
+                        looking at the same data in the pageviews section, the page with the video has higher data than
+                        the variant. I will run another test for a more extended period and see what I get. </p>
+                    
+                    <h2 class="section-heading">Content Experiment Test</h2>
+
+                    <p>Google Analytics and testing have undoubtedly been an experience. There is so much to learn from
+                        these tools when the tests are set up correctly. I will change up my testing again and
+                        eventually update this post with new findings. I accidental set up the wrong objective, which
+                        kind of through my data off.</p>
                 </div>
             </div>
         </div>
